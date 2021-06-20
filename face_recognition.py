@@ -3,15 +3,11 @@ import cv2 as cv
 
 harr_cascade = cv.CascadeClassifier('harr_face.xml')
 people = ['Ben Afflek', 'Elton John', 'Jerry Seinfield', 'Madonna', 'Mindy Kaling', 'Anubhab Das']
-
-
-# features = np.load('features.npy', allow_pickel=True)
-# features = np.load('lables.npy')
  
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img = cv.imread('Resources\Faces/val\jerry_seinfeld/3.jpg')
+img = cv.imread('Resources\Faces/val/ben_afflek/2.jpg')
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Person', gray)
