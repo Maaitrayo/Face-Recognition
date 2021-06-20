@@ -27,4 +27,3 @@ for(x,y,w,h) in face_rect:
 cv.imshow('Detected Face', img)
 cv.waitKey(0)
 
-#output will be shown.
